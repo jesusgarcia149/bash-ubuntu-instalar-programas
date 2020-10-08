@@ -12,4 +12,4 @@ sudo apt-get update
 sudo apt-get install brackets -y
 
 #npm nodejs git
-sudo apt install npm nodejs git
+sudo apt install npm nodejs git -y
