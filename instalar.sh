@@ -53,7 +53,7 @@ comp_tarea() {
 	fi
 }
 comp_paquetes_basicos() {
-    clear
+    tput reset
     echo "¿Quieres instalar los paquetes basicos?"
     echo ""
     echo "1.- navegadores:"
@@ -100,7 +100,7 @@ comp_paquetes_basicos() {
 	fi
 }
 comp_paquetes_controladores() {
-    clear
+    tput reset
     echo "¿Quieres instalar los paquetes controladores?"
     echo ""
     echo "10.-controladores"
@@ -142,7 +142,7 @@ comp_paquetes_arranques() {
 	fi
 }
 comp_paquetes_personalizacion() {
-    clear
+    tput reset
     echo "¿Quieres instalar los paquetes personalizacion?"
     echo ""
     echo "13.-personalizacion"
@@ -162,7 +162,7 @@ comp_paquetes_personalizacion() {
 	fi
 }
 comp_paquetes_multimedia() {
-    clear
+    tput reset
     echo "¿Quieres instalar los paquetes multimedia?"
     echo ""
     echo "15.1.-multimedia"
@@ -191,7 +191,7 @@ comp_paquetes_multimedia() {
 	fi
 }
 comp_paquetes_desarrollo() {
-    clear
+    tput reset
     echo "¿Quieres instalar los paquetes desarrollo?"
     echo ""
     echo "15.2.-desarrollo"
@@ -214,9 +214,9 @@ comp_paquetes_desarrollo() {
 	fi
 }
 instalacion() {
+    tput reset
     #cambiamos al directorio de la version
     cd $version
-    ls
     #basicos
     if [ "$basicos" = "y" ]
         then
@@ -260,11 +260,12 @@ comp_paquetes_desarrollo
 instalacion
 
 #Mostrar Datos
-clear
-echo "Datos:"
+tput reset
+echo "Instalacion Finalizada!"
 echo "version:" $version
 echo "arquitectura:" $arquitectura
 echo "tarea:" $tarea
+echo "Paquetes instalados:"
 echo "basicos:" $basicos
 echo "controladores:" $controladores
 echo "arranques:" $arranques
