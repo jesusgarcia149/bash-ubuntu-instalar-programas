@@ -24,7 +24,7 @@ sudo mkdir $DIRECTORIO/13.-personalizacion
 #url: https://launchpad.net/%7Ezorinos/+archive/ubuntu/stable/+index?batch=75&direction=backwards&memo=150&start=75
 sudo add-apt-repository ppa:zorinos/stable -y
 sudo apt update
-sudo apt-get install --download-only xfce4-zorinmenulite-plugin zorin-agent-geoclue2 zorin-desktop-themes zorin-os-default-settings zorin-os-wallpapers zorin-appearance zorin-exec-guard zorin-os-file-templates zorin-os-wallpapers-15 zorin-appearance-layouts-support zorin-exec-guard-app-db zorin-os-lite-core zorin-sound-theme zorin-appearance-layouts-xfce-core zorin-icon-themes zorin-os-lite-default-settings zorin-auto-theme zorin-os-artwork zorin-os-lite-desktop -y
+sudo apt-get install --download-only xfce4-zorinmenulite-plugin zorin-agent-geoclue2 zorin-desktop-themes zorin-os-default-settings zorin-os-wallpapers zorin-appearance zorin-exec-guard zorin-os-file-templates zorin-os-wallpapers-15 zorin-appearance-layouts-support zorin-exec-guard-app-db zorin-os-lite-core zorin-sound-theme zorin-appearance-layouts-xfce-core zorin-icon-themes zorin-os-lite-default-settings zorin-auto-theme zorin-os-artwork zorin-os-lite-desktop thunar -y
 sudo mkdir $DIRECTORIO/13.-personalizacion/zorin
 sudo cp /var/cache/apt/archives/* $DIRECTORIO/13.-personalizacion/zorin
 sudo apt-get clean
