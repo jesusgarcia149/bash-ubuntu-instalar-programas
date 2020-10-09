@@ -213,6 +213,33 @@ comp_paquetes_desarrollo() {
         echo ""
 	fi
 }
+comp_paquetes_emuladores() {
+    tput reset
+    echo "¿Quieres instalar los paquetes emuladores?"
+    echo ""
+    echo "Emuladores:"
+    echo "- nestopia"
+    echo "- kega-fusion"
+    echo "- zsnes"
+    echo "- mednafen"
+    echo "- mupen64plus-qt"
+    echo "- desmume"
+    echo "- dolphin-emu"
+    echo "- ppsspp"
+    echo ""
+    read -p "Si o No [y/n]: " emuladores
+    if [ "$emuladores" = "y" ]
+	then
+		echo "Se instalaran los paquetes emuladores"
+	elif [ "$emuladores" = "n" ]
+	then
+		echo "No se instalaran los paquetes emuladores"
+	else
+		echo "opcion no registrada, intentalo nuevamente"
+		comp_paquetes_emuladores
+        echo ""
+	fi
+}
 instalacion() {
     tput reset
     #cambiamos al directorio de la version
@@ -247,6 +274,12 @@ instalacion() {
         then
         sudo sh ./$tarea"-desarrollo-"$version"-all".sh
     fi
+    #emuladores
+    if [ "$emuladores" = "y" ]
+        then
+        sudo sh ./$tarea"-emuladores-"$version"-all".sh
+    fi
+
 }
 comp_version
 comp_arquitectura
@@ -257,6 +290,7 @@ comp_paquetes_arranques
 comp_paquetes_personalizacion
 comp_paquetes_multimedia
 comp_paquetes_desarrollo
+comp_paquetes_emuladores
 instalacion
 
 #Mostrar Datos
@@ -272,3 +306,4 @@ echo "arranques:" $arranques
 echo "personalizacion:" $personalizacion
 echo "multimedia:" $multimedia
 echo "desarrollo:" $desarrollo
+echo "emuladores:" $emuladores
