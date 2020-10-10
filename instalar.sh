@@ -240,6 +240,35 @@ comp_paquetes_emuladores() {
         echo ""
 	fi
 }
+comp_proyectos_github() {
+    tput reset
+    echo "¿Quieres instalar mis proyectos de github?"
+    echo ""
+    echo "Proyectos:"
+    echo "- bash-ubuntu-instalar-programas"
+    echo "- php-tienda"
+    echo "- php-crud-with-images"
+    echo "- php-crud"
+    echo "- php-auth-system"
+    echo "- js-nodejs-first-page"
+    echo "- js-pong"
+    echo "- js-planificador-de-rutas"
+    echo "- js-localstorage-crud"
+    echo "- js-vuejs-cms"
+    echo ""
+    read -p "Si o No [y/n]: " proyectos_github
+    if [ "$proyectos_github" = "y" ]
+	then
+		echo "Se instalaran mis proyectos de github"
+	elif [ "$proyectos_github" = "n" ]
+	then
+		echo "No se instalaran mis proyectos de github"
+	else
+		echo "opcion no registrada, intentalo nuevamente"
+		comp_proyectos_github
+        echo ""
+    fi
+}
 instalacion() {
     tput reset
     #cambiamos al directorio de la version
@@ -279,7 +308,27 @@ instalacion() {
         then
         sudo sh ./$tarea"-emuladores-"$version"-all".sh
     fi
-
+    #proyectos
+    cd ../
+    cd ./proyectos-github
+    sudo chmod 777 ./bash-descargar-instalar-proyectos-github-all.sh
+    sudo sh ./bash-descargar-instalar-proyectos-github-all.sh
+}
+mostrar_datos() {
+	tput reset
+	echo "Instalacion Finalizada!"
+	echo "version:" $version
+	echo "arquitectura:" $arquitectura
+	echo "tarea:" $tarea
+	echo "Paquetes instalados:"
+	echo "basicos:" $basicos
+	echo "controladores:" $controladores
+	echo "arranques:" $arranques
+	echo "personalizacion:" $personalizacion
+	echo "multimedia:" $multimedia
+	echo "desarrollo:" $desarrollo
+	echo "emuladores:" $emuladores
+	echo "proyectos-github:" $proyectos_github
 }
 comp_version
 comp_arquitectura
@@ -291,19 +340,6 @@ comp_paquetes_personalizacion
 comp_paquetes_multimedia
 comp_paquetes_desarrollo
 comp_paquetes_emuladores
+comp_proyectos_github
 instalacion
-
-#Mostrar Datos
-tput reset
-echo "Instalacion Finalizada!"
-echo "version:" $version
-echo "arquitectura:" $arquitectura
-echo "tarea:" $tarea
-echo "Paquetes instalados:"
-echo "basicos:" $basicos
-echo "controladores:" $controladores
-echo "arranques:" $arranques
-echo "personalizacion:" $personalizacion
-echo "multimedia:" $multimedia
-echo "desarrollo:" $desarrollo
-echo "emuladores:" $emuladores
+mostrar_datos
