@@ -309,10 +309,13 @@ instalacion() {
         sudo sh ./$tarea"-emuladores-"$version"-all".sh
     fi
     #proyectos
-    cd ../
-    cd ./proyectos-github
-    sudo chmod 777 ./bash-descargar-instalar-proyectos-github-all.sh
-    sudo sh ./bash-descargar-instalar-proyectos-github-all.sh
+    if [ "$proyectos_github" = "y" ]
+        then
+    	cd ../
+    	cd ./proyectos-github
+    	sudo chmod 777 ./bash-descargar-instalar-proyectos-github-all.sh
+    	sudo sh ./bash-descargar-instalar-proyectos-github-all.sh
+    fi
 }
 mostrar_datos() {
 	tput reset
