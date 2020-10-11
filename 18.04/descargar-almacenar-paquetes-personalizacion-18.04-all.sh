@@ -28,3 +28,17 @@ sudo apt-get install --download-only xfce4-zorinmenulite-plugin zorin-agent-geoc
 sudo mkdir $DIRECTORIO/13.-personalizacion/zorin
 sudo cp /var/cache/apt/archives/* $DIRECTORIO/13.-personalizacion/zorin
 sudo apt-get clean
+
+#arc-theme papirus-icons-theme
+sudo apt-get install --download-only arc-theme papirus-icon-theme -y
+sudo mkdir $DIRECTORIO/13.-personalizacion/arc-theme-papirus-icon-theme
+sudo cp /var/cache/apt/archives/* $DIRECTORIO/13.-personalizacion/arc-theme-papirus-icon-theme
+sudo apt-get clean
+
+#flat-remix-theme
+sudo add-apt-repository ppa:daniruiz/flat-remix -y 
+sudo apt update
+sudo apt-get install --download-only flat-remix flat-remix-gtk -y
+sudo mkdir $DIRECTORIO/13.-personalizacion/flat-remix
+sudo cp /var/cache/apt/archives/* $DIRECTORIO/13.-personalizacion/flat-remix
+sudo apt-get clean
