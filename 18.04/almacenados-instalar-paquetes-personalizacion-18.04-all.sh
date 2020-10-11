@@ -18,4 +18,13 @@ cd 13.-personalizacion
 cd zorin
 sudo dpkg -i *.deb
 cd ../
+#arc-theme-papirus-icon-theme
+cd arc-theme-papirus-icon-theme
+sudo dpkg -i *.deb
+cd ../
+#flat-remix
+cd flat-remix
+sudo dpkg -i *.deb
+cd ../
+#salir
 cd ../
