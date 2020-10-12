@@ -149,7 +149,7 @@ comp_paquetes_personalizacion() {
     echo "- zorin" 
     echo "- arc-theme papirus-icon-theme"
     echo "- flat-remix"
-    echo "- adapta"
+    echo "- adapta-gtk-theme"
     echo ""
     read -p "Si o No [y/n]: " personalizacion
     if [ "$personalizacion" = "y" ]
