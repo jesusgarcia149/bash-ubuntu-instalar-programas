@@ -13,3 +13,8 @@ sudo apt install arc-theme papirus-icon-theme -y
 sudo add-apt-repository ppa:daniruiz/flat-remix -y 
 sudo apt update
 sudo apt install flat-remix flat-remix-gtk -y
+
+#adapta-gtk-theme
+sudo apt-add-repository ppa:tista/adapta -y
+sudo apt update
+sudo apt install adapta-gtk-theme -y
