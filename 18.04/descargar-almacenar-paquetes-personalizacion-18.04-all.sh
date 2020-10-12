@@ -42,3 +42,11 @@ sudo apt-get install --download-only flat-remix flat-remix-gtk -y
 sudo mkdir $DIRECTORIO/13.-personalizacion/flat-remix
 sudo cp /var/cache/apt/archives/* $DIRECTORIO/13.-personalizacion/flat-remix
 sudo apt-get clean
+
+#adapta-gtk-theme
+sudo apt-add-repository ppa:tista/adapta -y 
+sudo apt update
+sudo apt-get install --download-only adapta-gtk-theme -y
+sudo mkdir $DIRECTORIO/13.-personalizacion/adapta-gtk-theme
+sudo cp /var/cache/apt/archives/* $DIRECTORIO/13.-personalizacion/adapta-gtk-theme
+sudo apt-get clean
