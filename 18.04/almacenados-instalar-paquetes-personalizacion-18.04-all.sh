@@ -26,5 +26,9 @@ cd ../
 cd flat-remix
 sudo dpkg -i *.deb
 cd ../
+#adapta
+cd adapta
+sudo dpkg -i *.deb
+cd ../
 #salir
 cd ../
