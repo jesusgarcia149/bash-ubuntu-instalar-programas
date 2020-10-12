@@ -26,8 +26,8 @@ cd ../
 cd flat-remix
 sudo dpkg -i *.deb
 cd ../
-#adapta
-cd adapta
+#adapta-gtk-theme
+cd adapta-gtk-theme
 sudo dpkg -i *.deb
 cd ../
 #salir
