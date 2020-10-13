@@ -19,6 +19,7 @@ instalamos_proyectos(){
 		# almacenamos mis proyectos dentro de una carpeta llamada apps
 		sudo mkdir apps
 		cd ./apps
+		sudo git clone https://github.com/jesusgarcia149/js-nodejs.git
 		sudo git clone https://github.com/jesusgarcia149/bash-ubuntu-instalar-programas.git
 		sudo git clone https://github.com/jesusgarcia149/php-tienda.git
 		sudo git clone https://github.com/jesusgarcia149/php-crud-with-images.git
