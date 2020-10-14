@@ -16,6 +16,7 @@ instalamos_proyectos(){
 		sudo mv /opt/lampp/htdocs/bitnami.css /opt/lampp/htdocs/lampp
 		sudo mv /opt/lampp/htdocs/favicon.ico /opt/lampp/htdocs/lampp
 		sudo mv /opt/lampp/htdocs/index.php /opt/lampp/htdocs/lampp
+
 		# almacenamos mis proyectos dentro de una carpeta llamada apps
 		sudo mkdir apps
 		cd ./apps
@@ -32,6 +33,15 @@ instalamos_proyectos(){
 		sudo git clone https://github.com/jesusgarcia149/js-vuejs-cms.git
 		#sudo git clone https://github.com/jesusgarcia149/php-laravel-api.git
 		#sudo git clone https://github.com/jesusgarcia149/js-angular-crud.git
+
+		# instalamos las dependencias necesarias para los proyectos en nodejs
+		cd ./js-nodejs
+		sudo npm install
+		cd ../
+		cd ./js-nodejs-first-page
+		sudo npm install
+		cd ../
+
 	else
 		sudo apt install wget -y
 		comp_arquitectura
@@ -39,7 +49,7 @@ instalamos_proyectos(){
 		then
 			sudo wget https://downloadsapachefriends.global.ssl.fastly.net/7.4.10/xampp-linux-x64-7.4.10-0-installer.run
 			sudo chmod 777 ./xampp-linux-x64-7.4.10-0-installer.run
-			sudo ./xampp-linux-x64-7.4.10-0-installer.run
+			sudo ./xampp-linux-x64-7.4.10-0-installer.run -y
 		fi
 		sudo sh ./bash-descargar-instalar-proyectos-desarrollo.sh
 	fi
