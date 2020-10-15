@@ -247,18 +247,6 @@ comp_proyectos_github() {
     tput reset
     echo "¿Quieres instalar mis proyectos de github?"
     echo ""
-    echo "Proyectos:"
-    echo "- bash-ubuntu-instalar-programas"
-    echo "- php-tienda"
-    echo "- php-crud-with-images"
-    echo "- php-crud"
-    echo "- php-auth-system"
-    echo "- js-nodejs-first-page"
-    echo "- js-pong"
-    echo "- js-planificador-de-rutas"
-    echo "- js-localstorage-crud"
-    echo "- js-vuejs-cms"
-    echo ""
     read -p "Si o No [y/n]: " proyectos_github
     if [ "$proyectos_github" = "y" ]
 	then
@@ -316,8 +304,8 @@ instalacion() {
         then
     	cd ../
     	cd ./proyectos-github
-    	sudo chmod 777 ./bash-descargar-instalar-proyectos-github-all.sh
-    	sudo sh ./bash-descargar-instalar-proyectos-github-all.sh
+    	sudo chmod 777 ./descargar-instalar-proyectos-github-$arquitectura.sh
+    	sudo sh ./descargar-instalar-proyectos-github-$arquitectura.sh
     fi
 }
 mostrar_datos() {
