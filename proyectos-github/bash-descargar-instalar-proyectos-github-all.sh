@@ -20,20 +20,20 @@ instalamos_proyectos(){
 		# almacenamos mis proyectos dentro de una carpeta llamada apps
 		sudo mkdir apps
 		cd ./apps
-		sudo git clone https://github.com/jesusgarcia149/js-nodejs.git
-		sudo git clone https://github.com/jesusgarcia149/bash-ubuntu-instalar-programas.git
-		sudo git clone https://github.com/jesusgarcia149/php-tienda.git
-		sudo git clone https://github.com/jesusgarcia149/php-crud-with-images.git
-		sudo git clone https://github.com/jesusgarcia149/php-crud.git
-		sudo git clone https://github.com/jesusgarcia149/php-auth-system.git
-		sudo git clone https://github.com/jesusgarcia149/js-nodejs-first-page.git
-		sudo git clone https://github.com/jesusgarcia149/js-pong.git
-		sudo git clone https://github.com/jesusgarcia149/js-planificador-de-rutas.git
-		sudo git clone https://github.com/jesusgarcia149/js-localstorage-crud.git
-		sudo git clone https://github.com/jesusgarcia149/js-vuejs-cms.git
-		#sudo git clone https://github.com/jesusgarcia149/php-laravel-api.git
 		#sudo git clone https://github.com/jesusgarcia149/js-angular-crud.git
-
+		#sudo git clone https://github.com/jesusgarcia149/php-laravel-api.git
+		sudo git clone https://github.com/jesusgarcia149/php-crud.git
+		sudo git clone https://github.com/jesusgarcia149/php-crud-with-images.git
+		sudo git clone https://github.com/jesusgarcia149/php-auth-system.git
+		sudo git clone https://github.com/jesusgarcia149/php-tienda.git
+		sudo git clone https://github.com/jesusgarcia149/js-planificador-de-rutas.git
+		sudo git clone https://github.com/jesusgarcia149/js-vuejs-cms.git
+		sudo git clone https://github.com/jesusgarcia149/js-localstorage-crud.git
+		sudo git clone https://github.com/jesusgarcia149/js-pong.git
+		sudo git clone https://github.com/jesusgarcia149/bash-ubuntu-instalar-programas.git
+		sudo git clone https://github.com/jesusgarcia149/js-nodejs.git
+		sudo git clone https://github.com/jesusgarcia149/js-nodejs-first-page.git
+		
 		# instalamos las dependencias necesarias para los proyectos en nodejs
 		cd ./js-nodejs
 		sudo npm install
