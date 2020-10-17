@@ -150,6 +150,7 @@ comp_paquetes_personalizacion() {
     echo "- arc-theme papirus-icon-theme"
     echo "- flat-remix"
     echo "- adapta-gtk-theme"
+    echo "- mint"
     echo ""
     read -p "Si o No [y/n]: " personalizacion
     if [ "$personalizacion" = "y" ]
