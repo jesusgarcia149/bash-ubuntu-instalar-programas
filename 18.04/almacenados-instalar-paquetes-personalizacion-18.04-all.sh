@@ -30,5 +30,9 @@ cd ../
 cd adapta-gtk-theme
 sudo dpkg -i *.deb
 cd ../
+#mint
+cd mint
+sudo dpkg -i *.deb
+cd ../
 #salir
 cd ../

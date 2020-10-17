@@ -50,3 +50,12 @@ sudo apt-get install --download-only adapta-gtk-theme -y
 sudo mkdir $DIRECTORIO/13.-personalizacion/adapta-gtk-theme
 sudo cp /var/cache/apt/archives/* $DIRECTORIO/13.-personalizacion/adapta-gtk-theme
 sudo apt-get clean
+
+#mint
+sudo wget http://packages.linuxmint.com/pool/main/m/mint-x-icons/mint-x-icons_1.5.2_all.deb
+sudo wget http://packages.linuxmint.com/pool/main/m/mint-y-icons/mint-y-icons_1.3.4_all.deb
+sudo wget http://packages.linuxmint.com/pool/main/m/mint-themes/mint-themes_1.8.2_all.deb
+sudo mkdir $DIRECTORIO/13.-personalizacion/mint
+sudo cp ./mint-x-icons_1.5.2_all.deb $DIRECTORIO/13.-personalizacion/mint
+sudo cp ./mint-y-icons_1.3.4_all.deb $DIRECTORIO/13.-personalizacion/mint
+sudo cp ./mint-themes_1.8.2_all.deb $DIRECTORIO/13.-personalizacion/mint
