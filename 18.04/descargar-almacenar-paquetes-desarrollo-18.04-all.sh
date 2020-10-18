@@ -22,10 +22,13 @@ sudo mkdir $DIRECTORIO/15.-especializacion
 #2./desarrollo
 sudo mkdir $DIRECTORIO/15.-especializacion/2.-desarrollo
 
-#brackets
-sudo add-apt-repository ppa:webupd8team/brackets -y
+#sublime-text
+sudo apt install wget -y
+sudo wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+sudo apt-get install apt-transport-https -y
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 sudo apt-get update
-sudo apt-get install --download-only brackets -y
-sudo mkdir $DIRECTORIO/15.-especializacion/2.-desarrollo/brackets
-sudo cp /var/cache/apt/archives/* $DIRECTORIO/15.-especializacion/2.-desarrollo/brackets
+sudo apt-get install sublime-text --download-only -y
+sudo mkdir $DIRECTORIO/15.-especializacion/2.-desarrollo/sublime-text
+sudo cp /var/cache/apt/archives/* $DIRECTORIO/15.-especializacion/2.-desarrollo/sublime-text
 sudo apt-get clean

@@ -15,7 +15,7 @@ cd $DIRECTORIO
 #15.-especializacion
 cd 15.-especializacion
 cd 2.-desarrollo
-cd brackets
+cd sublime-text
 sudo dpkg -i *.deb
 cd ../
 cd ../
