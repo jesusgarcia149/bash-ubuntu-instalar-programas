@@ -199,7 +199,7 @@ comp_paquetes_desarrollo() {
     echo "¿Quieres instalar los paquetes desarrollo?"
     echo ""
     echo "15.2.-desarrollo"
-    echo "- brackets"
+    echo "- sublime-text"
     echo "- npm"
     echo "- nodejs"
     echo "- git"
