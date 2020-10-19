@@ -42,7 +42,7 @@ instalamos_proyectos(){
 		cd ./js-nodejs-first-page
 		sudo npm install
 		cd ../
-		cd ./js-nodejs-mysql-crud.git
+		cd ./js-nodejs-mysql-crud
 		sudo npm install
 
 	else
