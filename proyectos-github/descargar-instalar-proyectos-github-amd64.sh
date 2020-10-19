@@ -44,6 +44,7 @@ instalamos_proyectos(){
 		cd ../
 		cd ./js-nodejs-mysql-crud
 		sudo npm install
+		cd ../
 
 	else
 		instalamos_xampp
