@@ -33,6 +33,7 @@ instalamos_proyectos(){
 		sudo git clone https://github.com/jesusgarcia149/bash-ubuntu-instalar-programas.git
 		sudo git clone https://github.com/jesusgarcia149/js-nodejs.git
 		sudo git clone https://github.com/jesusgarcia149/js-nodejs-first-page.git
+		sudo git clone https://github.com/jesusgarcia149/js-nodejs-mysql-crud.git
 		
 		# instalamos las dependencias necesarias para los proyectos en nodejs
 		cd ./js-nodejs
@@ -41,6 +42,8 @@ instalamos_proyectos(){
 		cd ./js-nodejs-first-page
 		sudo npm install
 		cd ../
+		cd ./js-nodejs-mysql-crud.git
+		sudo npm install
 
 	else
 		instalamos_xampp
