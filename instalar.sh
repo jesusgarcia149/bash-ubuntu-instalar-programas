@@ -149,8 +149,10 @@ comp_paquetes_personalizacion() {
     echo "- zorin" 
     echo "- arc-theme papirus-icon-theme"
     echo "- flat-remix"
-    echo "- adapta-gtk-theme"
     echo "- mint"
+    echo "- adapta-gtk-theme"
+    echo "- yaru"
+    echo "- ubuntu-bionic-wallpapers"
     echo ""
     read -p "Si o No [y/n]: " personalizacion
     if [ "$personalizacion" = "y" ]

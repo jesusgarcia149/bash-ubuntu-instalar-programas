@@ -26,12 +26,20 @@ cd ../
 cd flat-remix
 sudo dpkg -i *.deb
 cd ../
+#mint
+cd mint
+sudo dpkg -i *.deb
+cd ../
 #adapta-gtk-theme
 cd adapta-gtk-theme
 sudo dpkg -i *.deb
 cd ../
-#mint
-cd mint
+#yaru
+cd yaru
+sudo dpkg -i *.deb
+cd ../
+#ubuntu-wallpapers-bionic
+cd wallpapers-ubuntu-wallpapers-bionic
 sudo dpkg -i *.deb
 cd ../
 #salir
