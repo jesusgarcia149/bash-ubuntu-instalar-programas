@@ -16,3 +16,5 @@ sudo apt install sublime-text -y
 
 #npm nodejs git
 sudo apt install npm nodejs git -y
+
+#Pigendo (Maquetador Web Grafico)
