@@ -2,7 +2,7 @@
 
 instalamos_xampp() {
 	#definimos la ubicacion del archivo
-	archivo=./xampp-linux-5.5.35-0-installer.run
+	archivo=./download
 	#si no existe el archivo lo descargamos
 	if [ ! -f "$archivo" ]; then
 		sudo apt install wget -y
