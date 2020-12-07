@@ -29,13 +29,13 @@ sudo apt install libreoffice -y
 sudo apt install libreoffice-l10n-es -y
 
 #multimedia
-sudo apt install clementine vlc -y
+sudo apt install clementine vlc gpaint -y
 
 #compresion
 sudo apt install unrar -y
 
 #utilidades
-sudo apt install gparted htop screenfetch -y
+sudo apt install gparted htop screenfetch qlipper -y
 
 #descargas
 sudo apt install qbittorrent -y
@@ -48,6 +48,10 @@ tar -xvf xdm-setup-7.2.10.tar.xz
 cd xdm-setup-7.2.10
 sudo ./install.sh
 cd
+
+#complementos
+#java
+sudo apt-get install openjdk-8-jre openjfx -y
 
 #redes
 sudo apt install tor -y

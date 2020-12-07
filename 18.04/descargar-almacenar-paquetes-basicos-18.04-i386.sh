@@ -59,6 +59,11 @@ sudo apt-get install --download-only vlc -y
 sudo mkdir $DIRECTORIO/3.-multimedia/vlc
 sudo cp /var/cache/apt/archives/* $DIRECTORIO/3.-multimedia/vlc
 sudo apt-get clean
+#gpaint
+sudo apt-get install --download-only gpaint -y
+sudo mkdir $DIRECTORIO/3.-multimedia/gpaint
+sudo cp /var/cache/apt/archives/* $DIRECTORIO/3.-multimedia/gpaint
+sudo apt-get clean
 
 #4.-compresion
 sudo mkdir $DIRECTORIO/4.-compresion
@@ -89,6 +94,11 @@ sudo apt-get install --download-only screenfetch -y
 sudo mkdir $DIRECTORIO/6.-utilidades/screenfetch
 sudo cp /var/cache/apt/archives/* $DIRECTORIO/6.-utilidades/screenfetch
 sudo apt-get clean
+#qlipper
+sudo apt-get install --download-only qlipper -y
+sudo mkdir $DIRECTORIO/6.-utilidades/qlipper
+sudo cp /var/cache/apt/archives/* $DIRECTORIO/6.-utilidades/qlipper
+sudo apt-get clean
 
 #7.-descargas
 sudo mkdir $DIRECTORIO/7.-descargas
@@ -107,6 +117,19 @@ sudo wget https://netactuate.dl.sourceforge.net/project/xdman/xdm-2018-x86.tar.x
 tar -xvf xdm-2018-x86.tar.xz
 sudo mkdir $DIRECTORIO/7.-descargas/xtreme-download-manager
 sudo cp install.sh $DIRECTORIO/7.-descargas/xtreme-download-manager
+sudo apt-get clean
+
+#9.-complementos
+sudo mkdir $DIRECTORIO/9.-complementos
+#openjdk-8-jre
+sudo apt-get install --download-only openjdk-8-jre -y
+sudo mkdir $DIRECTORIO/9.-complementos/openjdk-8-jre
+sudo cp /var/cache/apt/archives/* $DIRECTORIO/9.-complementos/openjdk-8-jre
+sudo apt-get clean
+#openjfx
+sudo apt-get install --download-only openjfx -y
+sudo mkdir $DIRECTORIO/9.-complementos/openjfx
+sudo cp /var/cache/apt/archives/* $DIRECTORIO/9.-complementos/openjfx
 sudo apt-get clean
 
 #12.-redes

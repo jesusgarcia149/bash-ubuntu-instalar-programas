@@ -32,3 +32,5 @@ sudo apt-get install sublime-text --download-only -y
 sudo mkdir $DIRECTORIO/15.-especializacion/2.-desarrollo/sublime-text
 sudo cp /var/cache/apt/archives/* $DIRECTORIO/15.-especializacion/2.-desarrollo/sublime-text
 sudo apt-get clean
+
+#Pigendo (Maquetador Web Grafico)

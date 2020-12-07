@@ -40,6 +40,9 @@ cd ../
 cd vlc
 sudo dpkg -i *.deb
 cd ../
+cd gpaint
+sudo dpkg -i *.deb
+cd ../
 cd ../
 
 #4.-compresion
@@ -60,6 +63,9 @@ cd ../
 cd screenfetch
 sudo dpkg -i *.deb
 cd ../
+cd qlipper
+sudo dpkg -i *.deb
+cd ../
 cd ../
 
 #7.-descargas
@@ -72,6 +78,16 @@ sudo dpkg -i *.deb
 cd ../
 cd xtreme-download-manager
 sudo sh install.sh
+cd ../
+cd ../
+
+#9.-complementos
+cd 9.-complementos
+cd openjdk-8-jre
+sudo dpkg -i *.deb
+cd ../
+cd openjfx
+sudo dpkg -i *.deb
 cd ../
 cd ../
 

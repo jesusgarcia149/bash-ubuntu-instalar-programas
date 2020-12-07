@@ -27,13 +27,13 @@ sudo apt install libreoffice -y
 sudo apt install libreoffice-l10n-es -y
 
 #multimedia
-sudo apt install clementine vlc -y
+sudo apt install clementine vlc gpaint -y
 
 #compresion
 sudo apt install unrar -y
 
 #utilidades
-sudo apt install gparted htop screenfetch -y
+sudo apt install gparted htop screenfetch qlipper -y
 
 #descargas
 sudo apt install qbittorrent -y
@@ -46,6 +46,9 @@ sudo wget https://netactuate.dl.sourceforge.net/project/xdman/xdm-2018-x86.tar.x
 tar -xvf xdm-2018-x86.tar.xz
 sudo ./install.sh
 cd
+
+#complementos
+sudo apt-get install openjdk-8-jre openjfx -y
 
 #redes
 sudo apt install nast nmap -y

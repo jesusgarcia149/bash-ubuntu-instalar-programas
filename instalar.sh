@@ -1,11 +1,8 @@
 #!/bin/bash
 
 comp_version() {
-	read -p "Dime tu version de Ubuntu [16.04/18.04/20.04]: " version
-	if [ "$version" = "16.04" ]
-	then
-		echo "Version" $version "si registrada"
-	elif [ "$version" = "18.04" ]
+	read -p "Dime tu version de Ubuntu [18.04/20.04]: " version
+	if [ "$version" = "18.04" ]
 	then
 		echo "Version" $version "si registrada"
 	elif [ "$version" = "20.04" ]
@@ -71,6 +68,7 @@ comp_paquetes_basicos() {
     echo "3.-multimedia:"
     echo "clementine"
     echo "vlc"
+    echo "gpaint"
     echo ""
     echo "4.-compresion:"
     echo "unrar"
@@ -79,11 +77,16 @@ comp_paquetes_basicos() {
     echo "gparted"
     echo "htop"
     echo "screenfetch"
+    echo "qlipper"
     echo ""
     echo "7.-descargas:"
     echo "qbittorrent"
     echo "megasync"
     echo "xtreme-download-manager"
+    echo "openjdk-8-jre"
+    echo "openjfx"
+    echo ""
+    echo "9.-complementos"
     echo ""
     echo "12.-redes:"
     echo "nast nmap"
@@ -149,6 +152,7 @@ comp_paquetes_personalizacion() {
     echo "¿Quieres instalar los paquetes personalizacion?"
     echo ""
     echo "13.-personalizacion"
+    echo "- yaru"
     echo "- zorin" 
     echo "- arc-theme papirus-icon-theme"
     echo "- flat-remix"

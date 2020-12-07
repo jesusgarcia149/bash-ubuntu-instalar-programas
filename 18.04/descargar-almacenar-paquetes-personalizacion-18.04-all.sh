@@ -29,6 +29,12 @@ sudo mkdir $DIRECTORIO/13.-personalizacion/zorin
 sudo cp /var/cache/apt/archives/* $DIRECTORIO/13.-personalizacion/zorin
 sudo apt-get clean
 
+#plank
+sudo apt-get install --download-only plank -y
+sudo mkdir $DIRECTORIO/13.-personalizacion/plank
+sudo cp /var/cache/apt/archives/* $DIRECTORIO/13.-personalizacion/plank
+sudo apt-get clean
+
 #arc-theme papirus-icons-theme
 sudo apt-get install --download-only arc-theme papirus-icon-theme -y
 sudo mkdir $DIRECTORIO/13.-personalizacion/arc-theme-papirus-icon-theme
