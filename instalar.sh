@@ -1,14 +1,25 @@
 #!/bin/bash
 
 comp_version() {
-	read -p "Dime tu version de Ubuntu [18.04/20.04]: " version
-	if [ "$version" = "18.04" ]
+	echo "Dime tu version de Ubuntu:"
+	echo "12.04"
+	echo "16.04"
+	echo "18.04"
+	echo "20.04"
+	echo ""
+	read -p "" version
+	if [ "$version" = "12.04" ]
 	then
+		echo "Version" $version "si registrada"
+        elif [ "$version" = "16.04" ]
+        then
+		echo "Version" $version "si registrada"
+        elif [ "$version" = "18.04" ]
+        then
 		echo "Version" $version "si registrada"
 	elif [ "$version" = "20.04" ]
 	then
-		echo "Version" $version "no registrada temporalmente"
-		comp_version
+		echo "Version" $version "si registrada"
 	else
 		echo "Version no registrada, intentalo nuevamente"
 		comp_version
@@ -87,6 +98,7 @@ comp_paquetes_basicos() {
     echo "openjfx"
     echo ""
     echo "9.-complementos"
+   echo "java"
     echo ""
     echo "12.-redes:"
     echo "nast nmap"
@@ -152,6 +164,7 @@ comp_paquetes_personalizacion() {
     echo "¿Quieres instalar los paquetes personalizacion?"
     echo ""
     echo "13.-personalizacion"
+    echo "- plank"
     echo "- yaru"
     echo "- zorin" 
     echo "- arc-theme papirus-icon-theme"
