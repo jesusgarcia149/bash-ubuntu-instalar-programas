@@ -40,7 +40,7 @@ sudo apt-get clean
 #libreoffice
 sudo apt-get remove libreoffice* -y
 sudo apt-get autoremove --purge -y
-sudo add-apt-repository ppa:libreoffice/libreoffice-6-4 -y
+sudo add-apt-repository ppa:libreoffice/libreoffice-7-0-y
 sudo apt update -y
 sudo apt install --download-only libreoffice libreoffice-l10n-es -y
 sudo mkdir $DIRECTORIO/2.-documentos/libreoffice
