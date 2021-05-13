@@ -37,3 +37,9 @@ sudo apt install yaru-theme-gnome-shell yaru-theme-icon yaru-theme-unity yaru-th
 
 #wallpapers
 sudo apt install ubuntu-wallpapers-bionic -y
+
+# Glory icon theme(Huawei Icons)
+https://www.xfce-look.org/s/XFCE/p/1341835
+https://github.com/yeyushengfan258/Glory-icon-theme
+# Windows 10 gtk theme (Huawei GTK)
+https://www.xfce-look.org/p/1216281/
