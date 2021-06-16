@@ -43,3 +43,4 @@ https://www.xfce-look.org/s/XFCE/p/1341835
 https://github.com/yeyushengfan258/Glory-icon-theme
 # Windows 10 gtk theme (Huawei GTK)
 https://www.xfce-look.org/p/1216281/
+https://www.xfce-look.org/p/1180594/
