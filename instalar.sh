@@ -1,25 +1,14 @@
 #!/bin/bash
 
 comp_version() {
-	echo "Dime tu version de Ubuntu:"
-	echo "12.04"
-	echo "16.04"
-	echo "18.04"
-	echo "20.04"
-	echo ""
-	read -p "" version
-	if [ "$version" = "12.04" ]
+	read -p "Dime tu version de Ubuntu [18.04/20.04]: " version
+	if [ "$version" = "18.04" ]
 	then
-		echo "Version" $version "si registrada"
-        elif [ "$version" = "16.04" ]
-        then
-		echo "Version" $version "si registrada"
-        elif [ "$version" = "18.04" ]
-        then
 		echo "Version" $version "si registrada"
 	elif [ "$version" = "20.04" ]
 	then
-		echo "Version" $version "si registrada"
+		echo "Version" $version "no registrada temporalmente"
+		comp_version
 	else
 		echo "Version no registrada, intentalo nuevamente"
 		comp_version
@@ -98,7 +87,6 @@ comp_paquetes_basicos() {
     echo "openjfx"
     echo ""
     echo "9.-complementos"
-   echo "java"
     echo ""
     echo "12.-redes:"
     echo "nast nmap"
@@ -164,7 +152,6 @@ comp_paquetes_personalizacion() {
     echo "¿Quieres instalar los paquetes personalizacion?"
     echo ""
     echo "13.-personalizacion"
-    echo "- plank"
     echo "- yaru"
     echo "- zorin" 
     echo "- arc-theme papirus-icon-theme"
@@ -236,6 +223,30 @@ comp_paquetes_desarrollo() {
 	else
 		echo "opcion no registrada, intentalo nuevamente"
 		comp_paquetes_desarrollo
+        echo ""
+	fi
+}
+comp_paquetes_compatibilidad() {
+    clear
+    echo "¿Quieres instalar los paquetes compatibilidad?"
+    echo ""
+    echo ".-compatibilidad"
+    echo "- winehq"
+    echo "- winetricks"
+    echo "- playonlinux"
+    echo "- lutris"
+    echo "- steam"
+    echo ""
+    read -p "Si o No [y/n]: " compatibilidad
+    if [ "$compatibilidad" = "y" ]
+	then
+		echo "Se instalaran los paquetes compatibilidad"
+	elif [ "$compatibilidad" = "n" ]
+	then
+		echo "No se instalaran los paquetes compatibilidad"
+	else
+		echo "opcion no registrada, intentalo nuevamente"
+		comp_paquetes_compatibilidad
         echo ""
 	fi
 }
@@ -317,6 +328,11 @@ instalacion() {
         then
         sudo sh ./$tarea"-desarrollo-"$version"-all".sh
     fi
+    #compatibilidad
+    if [ "$compatibilidad" = "y" ]
+        then
+        sudo sh ./$tarea"-compatibilidad-"$version"-all".sh
+    fi
     #emuladores
     if [ "$emuladores" = "y" ]
         then
@@ -351,6 +367,7 @@ mostrar_datos() {
 	echo "personalizacion:" $personalizacion
 	echo "multimedia:" $multimedia
 	echo "desarrollo:" $desarrollo
+	echo "compatibilidad:" $compatibilidad
 	echo "emuladores:" $emuladores
 	echo "proyectos-github:" $proyectos_github
 }
@@ -363,6 +380,7 @@ comp_paquetes_arranques
 comp_paquetes_personalizacion
 comp_paquetes_multimedia
 comp_paquetes_desarrollo
+comp_paquetes_compatibilidad
 comp_paquetes_emuladores
 comp_proyectos_github
 instalacion
