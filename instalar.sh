@@ -1,7 +1,12 @@
 #!/bin/bash
 
 comp_version() {
-	read -p "Dime tu version de Ubuntu [18.04/20.04]: " version
+	echo "Dime tu version de Ubuntu"
+	echo "12.04"
+	echo "16.04"
+	echo "18.04"
+	echo "20.04"
+	read -p "version: " version
 	if [ "$version" = "18.04" ]
 	then
 		echo "Version" $version "si registrada"
