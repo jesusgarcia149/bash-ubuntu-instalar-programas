@@ -11,8 +11,11 @@ sudo apt install wget -y
 
 #navegadores
 sudo apt install firefox -y
-sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb
+sudo wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main"
+>> /etc/apt/sources.list.d/google.list'
+sudo apt update
+sudo apt install google-chrome-stable -y
 
 #documentos
 #gscan2pdf
@@ -22,7 +25,7 @@ sudo apt install ocrfeeder tesseract-ocr -y
 #libreoffice
 sudo apt-get remove libreoffice* -y
 sudo apt-get autoremove --purge -y
-sudo add-apt-repository ppa:libreoffice/libreoffice-6-4 -y
+sudo add-apt-repository ppa:libreoffice/ppa -y
 sudo apt update -y
 sudo apt install libreoffice -y
 #libreoffice en español
