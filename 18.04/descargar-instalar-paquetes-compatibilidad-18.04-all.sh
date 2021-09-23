@@ -6,6 +6,9 @@ cd
 #actualizar repositorios
 sudo apt update
 
+#intercambiar archivos de Android al PC
+sudo apt install kdeconnect -y
+
 #wine
 sudo dpkg --add-architecture i386
 wget -nc https://dl.winehq.org/wine-builds/winehq.key
