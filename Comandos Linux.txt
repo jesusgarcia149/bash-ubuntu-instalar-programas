@@ -1,21 +1,40 @@
+#ver los archivos que hay en tu directorio
+ls
+
+
+#crear directorio
+mkdir nombre_de_la_carpeta
+#copiar directorio
+cp -r carpeta_a_copiar carpeta_destino
+#mover directorio
+mv carpeta_a_mover carpeta_destino
+#eliminar directorio
+rm -r nombre_de_la_carpeta
+
+#crear archivo
+touch archivo.txt
+#copiar archivo
+cp fichero_a_copiar carpeta_destino
+#mover archivo
+mv fichero_a_mover carpeta_destino
+#eliminar archivo
+rm archivo.txt
+
+
+#seleccionar un archivo desde el directorio raiz en la terminal
+./nombre_del_archivo
+#seleccionar un archivo sin estar en el directorio raiz en la terminal
+/directorio/nombre_del_archivo
+
+
+#permisos de super usuario
+sudo
+#entrar en modo super usuario
+sudo su
+
+
 #actualizar repositorio
 sudo apt-get update
-#actualizar programas
-sudo apt-get upgrade
-
-
-#descargar e instalar programa
-sudo apt-get install nombre_del_programa
-#instalar programa
-sudo apt install nombre_del_programa
-#descargar programa sin instalar
-sudo apt-get install  nombre_del_prograna --download-only
-#directorio donde se guardan los paquetes
-/var/cache/apt/archives/
-
-
-#corregir dependencias de programas
-sudo apt-get install -f
 
 
 #direccion de la lista de repositorios
@@ -31,41 +50,37 @@ sudo rm /etc/apt/sources.list.d/*
 sudo apt update
 
 
-#ver lista de programas instalados
-dpkg --get-selections
-
-
-#cambiar el orden de arranque en linux
-sudo nano /etc/default/grub
-sudo update-grub
-
-
-#ver consumo de memoria
-sudo free -h
-
-
+#descargar e instalar programa
+sudo apt-get install nombre_del_programa
+#instalar programa
+sudo apt install nombre_del_programa
+#descargar programa sin instalar
+sudo apt-get install  nombre_del_prograna --download-only
+#directorio donde se guardan los paquetes
+/var/cache/apt/archives/
 #desinstalar programa
 sudo apt-get remove nombre_del_programa
 sudo apt-get autoremove nombre_del_programa --purge
-
-
-#ver los archivos que hay en tu directorio
-ls
-#seleccionar un archivo desde el directorio raiz en la terminal
-./nombre_del_archivo
-#seleccionar un archivo sin estar en el directorio raiz en la terminal
-/directorio/nombre_del_archivo
-
-
-#instalar paquetes 32bits
-dpkg --add-architecture i386
+#corregir dependencias de programas
+sudo apt-get install -f
+#actualizar programas
+sudo apt-get upgrade
 
 
 #darle permisos de lectura, escritura y ejecucion a un archivo
 sudo chmod 755 ./nombre_del_archivo
+#darle todos los permisos a un archivos
+sudo chmod 777 ./nombre_del_archivo
 
 
-#correr paquete .deb
+#ver lista de programas instalados
+dpkg --get-selections
+
+#añadir arquitectura 32bits
+dpkg --add-architecture i386
+
+
+#correr (instalar) paquete .deb
 sudo dpkg -i ./nombre_del_archivo.deb
 #correr todos los paquetes .deb
 sudo dpkg -i ./*.deb
@@ -79,8 +94,17 @@ sudo java -jar ./nombre_del_archivo.jar
 
 #reiniciar un programa
 sudo systemctl restart programa
-# ver el estatus de un programa
+#ver el estatus de un programa
 sudo systemctl status programa
+
+
+#cambiar el orden de arranque en linux
+sudo nano /etc/default/grub
+sudo update-grub
+
+
+#ver consumo de memoria
+sudo free -h
 
 
 #ver cantidad de memoria ram instalada
