@@ -113,5 +113,15 @@ glxinfo | egrep -i 'device|memory'
 glxinfo | grep "OpenGL version"
 
 
-#error initramfs
+#Solucionar errores
+
+#Repositorios (Eliminarlos)
+sudo rm /etc/apt/sources.list.d/*
+sudo apt update
+
+#Could not get lock /var/lib/dpkg/lock
+sudo rm /var/lib/dpkg/lock-frontend
+sudo dpkg --configure -a
+
+#Initramfs
 fsck -c -y /dev/sda#
