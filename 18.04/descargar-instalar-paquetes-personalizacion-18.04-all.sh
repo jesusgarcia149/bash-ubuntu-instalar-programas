@@ -58,3 +58,5 @@ sudo unzip windows-10-master.zip
 sudo mv Windows-10-master /home/jesus/.themes
 #localizacion de los wallpapers
 https://drive.google.com/drive/folders/1anCThE5X0LWaOPdr3nCrUVl38PC0cYB3
+#Huawei P Smart 2019
+https://wallpaperaccess.com/huawei-2019
