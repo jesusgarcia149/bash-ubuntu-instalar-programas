@@ -34,6 +34,10 @@ sudo apt install libreoffice-l10n-es -y
 
 #multimedia
 sudo apt install clementine vlc gpaint -y
+# Kodi v19.2 - Matrix
+sudo add-apt-repository ppa:team-xbmc/ppa -y
+sudo apt update
+sudo apt install kodi y
 
 #compresion
 sudo apt install unrar -y
