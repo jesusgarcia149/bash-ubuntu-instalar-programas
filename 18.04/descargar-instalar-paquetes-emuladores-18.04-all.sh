@@ -7,6 +7,11 @@
 sudo apt update
 sudo apt install wget
 
+#retroarch
+sudo add-apt-repository ppa:libretro/stable -y
+sudo apt-get update
+sudo apt install retroarch -y
+
 #nes
 sudo apt-get install nestopia -y
 
