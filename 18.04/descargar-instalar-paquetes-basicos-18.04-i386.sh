@@ -27,7 +27,7 @@ sudo apt install libreoffice -y
 sudo apt install libreoffice-l10n-es -y
 
 #multimedia
-sudo apt install clementine vlc gpaint -y
+sudo apt install clementine vlc kolourpaint -y
 # Kodi v19.2 - Matrix
 sudo add-apt-repository ppa:team-xbmc/ppa -y
 sudo apt update
