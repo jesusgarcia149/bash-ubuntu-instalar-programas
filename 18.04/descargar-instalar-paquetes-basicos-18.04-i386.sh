@@ -11,6 +11,8 @@ sudo apt install wget -y
 
 #navegadores
 sudo apt install firefox -y
+#chromium
+sudo apt install chromium-browser -y
 
 #documentos
 #gscan2pdf
@@ -20,7 +22,7 @@ sudo apt install ocrfeeder tesseract-ocr -y
 #libreoffice
 sudo apt-get remove libreoffice* -y
 sudo apt-get autoremove --purge -y
-sudo add-apt-repository ppa:libreoffice/libreoffice-6-4 -y
+sudo add-apt-repository ppa:libreoffice/ppa -y
 sudo apt update -y
 sudo apt install libreoffice -y
 #libreoffice en español
