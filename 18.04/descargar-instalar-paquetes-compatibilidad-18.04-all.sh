@@ -16,6 +16,9 @@ sudo apt-add-repository 'deb https://download.opensuse.org/repositories/Emulator
 sudo apt-get update
 sudo apt install --install-recommends winehq-stable -y
 
+#q4wine
+sudo apt install q4wine -y
+
 #winetricks
 sudo apt install winetricks -y
 
